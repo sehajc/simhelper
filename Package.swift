@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "simhelper",
+    products: [
+        .executable(name: "simhelper", targets: ["simhelper"]),
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "0.0.1"),
         .package(url: "https://github.com/JohnSundell/ShellOut.git", from: "2.0.0")
